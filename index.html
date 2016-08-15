@@ -9,13 +9,18 @@
 <body>
 
     <div ng-app="app">
-        <div ng-controller="ContactController as vm">
+        <div ng-controller="ContactController as c">
             <ul>
                 <li>
-                    <h4>Contact Name</h4>
-                    <h6>Phone Number</h6>
+                  <li ng-repeat="contact in c.contacts">
+                    <h4>Contact Name: <input ng-model="contact.name" /></h4>
+                    <h6>Phone Number <input ng-model="contact.phone" /></h6>
+                  </li>
                 </li>
             </ul>
+
+            <button ng-click="c.addContact()">Add Contact</button>
+
         </div>
     </div>
 

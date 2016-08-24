@@ -1,7 +1,12 @@
 {
-   "name": "angular",
-   "version": "1.0.0",
-   "devDependencies": {
-     "express": "^4.13.4"
-   }
+  "name": "angular",
+  "version": "1.0.0",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-spec-reporter": "0.0.26"
+  }
 }
